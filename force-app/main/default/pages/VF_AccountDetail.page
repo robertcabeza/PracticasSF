@@ -1,0 +1,15 @@
+<!-- <apex:page standardController="Account" lightningStylesheets="true"> -->
+
+<!-- <apex:detail subject="{!Account.Id}" /> -->
+<!-- <apex:detail relatedList="false" /> -->
+<!-- <apex:relatedList list="Opportunities" /> -->
+<!--  -->
+<!-- </apex:page> -->
+
+<apex:page standardController="Account" lightningStylesheets="true">
+    <apex:pageBlock >
+        <apex:pageBlockTable value="{!Account.Contacts}" var="contact">
+            <apex:column value="{!contact.Name}" ></apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+</apex:page>
