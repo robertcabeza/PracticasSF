@@ -1,0 +1,36 @@
+<aura:component controller ="GetAllAccounts">
+    <aura:attribute name="accs" type="Account[]"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered" aria-label="Accounts">
+        <thead>
+             <tr class="slds-line-height_reset">
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Opportunity Name">Account Name</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Account Name">Account Type</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Account Name">Account Rating</div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate" title="Account Name">AnnualRevenue</div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--aura:iteration item="{!v.accs}" var"item"-->
+            <aura:iteration items="{!v.accs}" var="item">
+               <tr>
+                    <td class="slds-hint-parent">{!item.Name}</td> 
+                    <td class="slds-hint-parent">{!item.type}</td>           
+                    <td class="slds-hint-parent">{!item.Rating}</td>            
+                    <td class="slds-hint-parent">{!item.AnnualRevenue}</td>     
+                </tr>
+                
+            </aura:iteration>
+        </tbody>
+      </table>
+      
+</aura:component>

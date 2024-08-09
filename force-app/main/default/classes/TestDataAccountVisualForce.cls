@@ -9,7 +9,7 @@ public class TestDataAccountVisualForce {
         parentId = controller.getId();
         System.debug('parentId::::'+parentId);        
         //Account acc = [SELECT Id , Name FROM Account /*WHERE Id =:parentId LIMIT 1*/];
-        lacctWrapper = new List<Account>([SELECT Id , Name FROM Account /*WHERE Id =:parentId LIMIT 1*/]);
+        lacctWrapper = new List<Account>([SELECT Id , Name, FirstName FROM Account /*WHERE Id =:parentId LIMIT 1*/]);
        /* System.debug('acc::::'+acc);
         
         accountWrapper = new AcccountWrapper();       
