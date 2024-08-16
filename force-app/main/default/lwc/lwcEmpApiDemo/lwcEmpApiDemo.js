@@ -1,11 +1,5 @@
 import { LightningElement } from 'lwc';
-import {
-    subscribe,
-    unsubscribe,
-    onError,
-    setDebugFlag,
-    isEmpEnabled,
-} from 'lightning/empApi';
+import {    subscribe, unsubscribe,  onError, setDebugFlag, isEmpEnabled, } from 'lightning/empApi';
 export default class LwcEmpApiDemo extends LightningElement {
     channelName = '/event/X911_Push_Event__e';
     isSubscribeDisabled = false;

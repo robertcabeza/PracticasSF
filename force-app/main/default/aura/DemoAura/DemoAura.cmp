@@ -4,11 +4,9 @@
     <aura:attribute name="subject" type="String" default="World" access="global" />
     
     <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
-    ****************-----*********
     <ui:inputText aura:id="inputComponent" class="slds-input" value="{!v.property}" />
     <ui:inputText aura:id="auraid" class="slds-input"/>
-    ****************-----*********
-    
+
     <div style="box">
         <span class="greeting">{!v.greeting}</span>, {!v.subject}!
     </div>
