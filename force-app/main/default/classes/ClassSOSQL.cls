@@ -5,7 +5,7 @@
  */
 public class ClassSOSQL {
    
-    public static void getDataSOSQL(){
+    public static void getDataSOSL(){
 
         List<Account> lAccount = new List<Account>();
         List<Contact> lContact = new List<Contact>();
